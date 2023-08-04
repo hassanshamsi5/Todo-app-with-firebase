@@ -41,6 +41,7 @@ async function getAndUpdate() {
 
   } else {
     let itemJsonArrayStr = localStorage.getItem('itemsJson');
+    
     itemJsonArray = JSON.parse(itemJsonArrayStr);
     itemJsonArray.push([tit, desc]);
     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
