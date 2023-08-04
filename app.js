@@ -13,13 +13,13 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
 const db = getFirestore(app);
 
 async function getAndUpdate() {
   console.log("Updating List...");
   let tit = document.getElementById('title').value;
   let desc = document.getElementById('description').value;
-
 
   let itemJsonArray;
   try {
